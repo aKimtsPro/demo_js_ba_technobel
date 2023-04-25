@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+            .red {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 id="mon-titre"> 
+            du texte 
+            <span>bonjour :)</span>
+        </h1>
+
+
+        <ul id="ma-liste">
+            <li class="red"> premier </li>
+            <li class="red"> premier </li>
+            <li class="red"> premier </li>
+            <li class="red"> premier </li>
+        </ul>
+
+        
+        <script>
+
+            const monTitre = document.getElementById("mon-titre");
+            // monTitre.innerText = "Un autre titre";
+            // console.log(monTitre);
+
+            // for( const prop in monTitre){
+            //     console.log(prop);
+            // }
+
+            const maListe = document.getElementById("ma-liste");
+            const premierEnfant = maListe.firstChild;
+
+            // 1) créer l'élément
+            const second = document.createElement("li");
+            second.innerText = "second";
+            second.className = "red";
+            // 2) ajouter l'élément
+            // maListe.appendChild(second);
+            maListe.insertBefore( second, premierEnfant );
+
+        </script>
+        
+    </body>
+</html>

@@ -15,3 +15,12 @@ function findIndex(array, value){
 }
 
 console.log( findIndex(tab, 2) ); // 1
+
+// try {
+//     throw "error";
+// }
+// catch (err) {
+//     console.log("une erreur s'est produite: " + err)
+// }
+
+// console.log("Après l'erreur");
