@@ -52,7 +52,24 @@
             // Une fois que l'utilisateur a donné son nom, affichez lui un message 
             // de bienvenue.
             // ex: "Bonjour Machin, bienvenue sur mon site".
+
         </script>
+
+        <!-- Interaction avec l'utilisateur -->
+        <input type="text" id="mon-input" value="bonjour">        
+        <button onclick="getInfoFromInput()">click me :)</button>
+
+        <script>
+
+            function getInfoFromInput(){
+                // 1 - récupérer les infos de la balise input
+                const monInput = document.getElementById("mon-input");
+                const valeur = monInput.value;
+                alert(valeur);
+            }
+
+        </script>
+            
         
     </body>
 </html>
