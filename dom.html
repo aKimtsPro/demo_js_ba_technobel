@@ -56,7 +56,7 @@
         </script>
 
         <!-- Interaction avec l'utilisateur -->
-        <input type="text" id="mon-input" value="bonjour">        
+        <input type="number" id="mon-input" value="bonjour">        
         <button onclick="getInfoFromInput()">click me :)</button>
 
         <script>
@@ -65,7 +65,7 @@
                 // 1 - récupérer les infos de la balise input
                 const monInput = document.getElementById("mon-input");
                 const valeur = monInput.value;
-                alert(valeur);
+                console.log( parseInt(valeur) );
             }
 
         </script>
